@@ -59,7 +59,8 @@ function anotherFunChallenge(input) {
     let whoAmI = "I don't know"; // O(1)
 } // O(4 + 7n) --> O(n)
 
-// Example 5
+
+// Example 5 (BigO of different inputs)
 function compressBoxesTwice(boxes, boxes2) {
     boxes.forEach(function(boxes) { // O(n)
         console.log(boxes);
@@ -71,4 +72,28 @@ function compressBoxesTwice(boxes, boxes2) {
 } // O(n + m)
 
 
-// Example 6
+// Example 6 (BigO of nested loops)
+const boxes = [1,2,3,4,5];
+
+function logAllPairsOfArray(array) {
+    for (let i = 0; i < array.length; i++) { // O(n)
+        for (let j = 0; j < array.length; j++) { // O(n)
+            console.log(array[i], array[j]);
+        }
+    }
+} // O(n * n) --> O(n^2)
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
