@@ -73,6 +73,7 @@ function compressBoxesTwice(boxes, boxes2) {
 
 
 // Example 6 (BigO of nested loops)
+const boxes = [1,2,3,4,5];
 
 function logAllPairsOfArray(array) {
     for (let i = 0; i < array.length; i++) { // O(n)
@@ -80,10 +81,19 @@ function logAllPairsOfArray(array) {
             console.log(array[i], array[j]);
         }
     }
-
-    const boxes = [1,2,3,4,5];
-    logAllPairsOfArray(boxes);
-
 } // O(n * n) --> O(n^2)
 
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
