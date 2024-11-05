@@ -1,7 +1,7 @@
 // Example 1
-/*function findNemo(array) {
+function findNemo(array) {
 
-    for (let i = 0; i< array.length; i++) {
+    for (let i = 0; i< array.length; i++) { // O(n) --> Linear Time
         if (array[i] === 'nemo') {
             console.log('Found NEMO!');
             break;
@@ -13,10 +13,26 @@ const nemo = ['nemo'];
 const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla'];
 const large = new Array(10000).fill('nemo');
 
-findNemo(large); // O(n) --> Linear Time*/
+findNemo(large); // O(n) --> Linear Time
 
-// Example 2
-/*const boxes = [0,1,2,3,4,5];
+const findNemo2 = array => {
+    array.forEach(i => {
+        if (i === 'nemo') {
+            console.log('Found NEMO!');
+        }
+    });
+}
+
+const findNemo3 = array => {
+    for (let i of array) {
+        if (i === 'nemo') {
+            console.log('Found NEMO!');
+        }
+    }
+}
+
+/*// Example 2
+/!*const boxes = [0,1,2,3,4,5];
 
 function logFirstTwoBoxes(boxes) {
     console.log(boxes[0]); // O(1)
@@ -24,7 +40,7 @@ function logFirstTwoBoxes(boxes) {
 }
 
 logFirstTwoBoxes(boxes); // O(2) --> Constant Time
-        // O(1) + O(1) = O(2) --> O(2) = O(1)*/
+        // O(1) + O(1) = O(2) --> O(2) = O(1)*!/
 
 // Example 3
 function funChallenge(input) {
@@ -83,7 +99,8 @@ function logAllPairsOfArray(array) {
     }
 } // O(n * n) --> O(n^2)
 
-
+const a = [1,2,3];
+console.log(a[0]); // O(1)*/
 
 
 
